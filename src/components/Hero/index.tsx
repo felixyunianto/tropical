@@ -1,62 +1,46 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
 
-import { CarouselOne, CarouselThree, CarouselTwo } from "../../assets";
+import { HeroImage } from "../../assets";
 SwiperCore.use([Autoplay]);
 
 const Hero = () => {
   return (
-    <div className="w-full flex gap-4 bg-gradient-to-r from-[#FEF9F6] to-transparent pl-[90px] h-[400px] justify-between">
-      <div className="w-3/12 flex flex-col gap-[10px] py-32">
-        <p className="text-5xl font-hero">
-          Future <br /> of Furniture
-        </p>
-        <div className="font-hero">
-          Find an elegant and luxurious interior designed by a professional
-          interrior designer.
+    <div className="w-full flex justify-center items-center mt-[100px] bg-[#0091C0]">
+      <div className="w-full flex items-center md:px-[90px] max-w-[1366px]">
+        <div className="flex-auto px-8 md:pr-[90px] py-[64px] flex flex-col items-center md:items-start md:justify-between gap-[44px] w-[709px]">
+          <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
+            <h1 className="font-bold text-white text-3xl md:text-5xl">
+              Pilih Furnitur Pilihan Terbaik Kami
+            </h1>
+            <p className="font-normal text-[16px] text-white">
+              Kami berdiri untuk keindahan & gaya di rumah Anda. Kami memiliki
+              pilihan furnitur yang mengesankan yang menjadi favorit anda dan
+              pasti anda sukai.
+            </p>
+            <div className="flex gap-[10px] flex-row items-center md:items-center">
+              <button className="rounded-lg px-6 py-4 bg-[#FF6A61] uppercase text-[12px] md:text-[16px] font-bold text-white">
+                KONSULTASI GRATIS
+              </button>
+              <button className="rounded-lg px-6 py-4 bg-white uppercase text-[12px] md:text-[16px] font-bold text-black">
+                CEK KATALOG
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-row md:flex-start md:items-center gap-[32px]">
+            <div className="flex flex-col text-white font-bold">
+              <h1 className="text-[24px]">1.534</h1>
+              <span>Total produk</span>
+            </div>
+            <div className="flex flex-col text-white font-bold">
+              <h1 className="text-[24px]">12.000+</h1>
+              <span>Total pelanggan</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="w-7/12 h-full">
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={"auto"}
-          loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          centeredSlides={true}
-          navigation={false}
-        >
-          <SwiperSlide className="" style={{width: '80%'}}>
-            <div className={`h-[400px] w-full transition-all delay-200 ease-in`}>
-              <img
-                src={CarouselOne}
-                alt=""
-                className="object-cover h-full w-full"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="" style={{width: '80%'}}>
-            <div className={`h-[400px] w-full transition-all delay-200 ease-in`}>
-              <img
-                src={CarouselTwo}
-                alt=""
-                className="object-cover h-full w-full"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="" style={{width: '80%'}}>
-            <div className={`h-[400px] w-full transition-all delay-200 ease-in`}>
-              <img
-                src={CarouselThree}
-                alt=""
-                className="object-cover h-full w-full"
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+        <div className="w-[657px] justify-center items-center hidden md:flex">
+          <img src={HeroImage} alt="" width="384" />
+        </div>
       </div>
     </div>
   );
