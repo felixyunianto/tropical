@@ -30,7 +30,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 flex justify-center bg-white h-[100px]">
+    <div className="shadow-md w-full fixed top-0 left-0 flex justify-center bg-white h-[100px] z-10">
       <div className="md:flex justify-between items-center bg-white py-4 max-w-[1366px] w-full md:px-[90px]">
         <div className="cursor-pointer">
           <img src={IsiRumahLogo} alt="" className="w-[145px] h-[52]" />

@@ -1,13 +1,14 @@
 import React from "react";
-import { Hero, Navbar } from "../components";
+import { Consultation, Hero, Navbar, ProductCarousel } from "../components";
 
 const LandingPage = () => {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Consultation/>
       {/* <Advantage /> */}
-      {/* <ProductCarousel /> */}
+      <ProductCarousel />
       {/* <BuyFlow /> */}
       {/* <Footer /> */}
     </div>

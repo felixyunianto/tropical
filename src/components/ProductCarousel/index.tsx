@@ -1,61 +1,20 @@
-import React, { createRef } from "react";
-import { ArrowNextIcon, ArrowPrevIcon, ProductImage } from "../../assets";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import React from "react";
+import { HeroImage } from "../../assets";
 
 const ProductCarousel = () => {
-  const navigationPref = createRef<HTMLButtonElement>();
-  const navigationNext = createRef<HTMLButtonElement>();
-
   return (
-    <div className="w-full flex flex-col items-center px-6 py-4 bg-[#F6F6F6]">
-      <div className="flex w-full items-center justify-between gap-[18px]">
-        <div className="w-1/12 flex justify-end">
-          <button className="cursor-pointer" ref={navigationPref}>
-            <img src={ArrowPrevIcon} alt="" className="arrow-prev" />
-          </button>
+    <div className="w-full flex justify-center items-center">
+      <div className="w-full max-w-[1366px] py-6 px-[90px] flex flex-col gap-6">
+        <div className="flex flex-col gap-[10px] items-center">
+          <h1 className="text-3xl font-bold">Produk kami</h1>
+          <div className="rounded-full w-[75px] h-[7px] bg-[#0091C0]"></div>
         </div>
-        <div className="flex-1 w-10/12">
-          <Swiper
-            spaceBetween={18}
-            slidesPerView={4}
-            navigation={{
-              nextEl: navigationNext.current,
-              prevEl: navigationPref.current,
-            }}
-            onBeforeInit={(swiper: any) => {
-              swiper.params.navigation.prevEl = navigationPref.current;
-              swiper.params.navigation.nextEl = navigationNext.current;
-            }}
-            modules={[Navigation]}
-          >
-            <SwiperSlide>
-              <ProductCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductCard />
-            </SwiperSlide>
-            <SwiperSlide>
-              <ProductCard />
-            </SwiperSlide>
-          </Swiper>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-center gap-6">
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
         </div>
-        <div className="w-1/12">
-          <button className="cursor-pointer" ref={navigationNext}>
-            <img src={ArrowNextIcon} alt="" className="arrow-next" />
-          </button>
-        </div>
-      </div>
-      <div className="w-full flex items-center justify-center pt-4">
-          <button className="rounded-full text-white bg-[#EBC386] py-2 px-6 hover:bg-[#c3a26f]">
-              Lihat Semua Produk
-          </button>
       </div>
     </div>
   );
@@ -69,23 +28,21 @@ interface ProductCardProsp {
 
 const ProductCard = (props: ProductCardProsp) => {
   return (
-    <div className="flex flex-col rounded-lg bg-white gap-2">
-      <div className="w-full h-[257px] rounded-t-lg">
-        <img
-          src={ProductImage}
-          alt=""
-          height={257}
-          className="object-fill h-[257px] w-full rounded-t-lg"
-        />
-      </div>
-      <div className="flex flex-col items-center pb-4 gap-[10px]">
-        <div className="">Sofa Retro 1</div>
-        <div className="font-bold">Rp. 1.000.000</div>
-        <div className="">
-          <button className="text-white rounded-full px-12 py-1 bg-[#BC916B] font-bold hover:bg-[#85664b]">
-            Beli
-          </button>
+    <div className="py-[87px] rounded-lg bg-[#FBEDDA] hover:bg-[#dacebc] px-[32px] flex justify-center items-center relative group overflow-hidden cursor-pointer">
+      <img src={HeroImage} alt=""  width={215} height={175}/>
+      <div className="absolute -bottom-full left-[8px] right-[8px] bg-white rounded-lg flex-col items-center p-4 gap-[10px] group-hover:bottom-[8px] transition-all duration-300">
+        <div className="w-full font-bold text-[#AFAFAF] text-xs">
+          Chair
         </div>
+        <div className="w-full font-bold text-base">
+          Sofa
+        </div>
+        <div className="w-full font-bold text-[#007913] text-lg">
+          Rp. 1000.0000
+        </div>
+        <button className="py-[2px] rounded-lg bg-[#FBEDDA] w-full font-bold">
+          Beli
+        </button>
       </div>
     </div>
   );

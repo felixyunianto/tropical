@@ -10,6 +10,9 @@ const Hero = () => {
       <div className="w-full flex items-center md:px-[90px] max-w-[1366px]">
         <div className="flex-auto px-8 md:pr-[90px] py-[64px] flex flex-col items-center md:items-start md:justify-between gap-[44px] w-[709px]">
           <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
+            <div className="justify-center items-center flex md:hidden">
+              <img src={HeroImage} alt="" width="384" />
+            </div>
             <h1 className="font-bold text-white text-3xl md:text-5xl">
               Pilih Furnitur Pilihan Terbaik Kami
             </h1>
