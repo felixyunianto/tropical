@@ -7,7 +7,7 @@ SwiperCore.use([Autoplay]);
 const Hero = () => {
   return (
     <div className="w-full flex justify-center items-center mt-[100px] bg-[#0091C0]">
-      <div className="w-full flex items-center md:px-[90px] max-w-[1366px]">
+      <div className="w-full flex items-center lg:px-[90px] max-w-[1366px]">
         <div className="flex-auto px-8 md:pr-[90px] py-[64px] flex flex-col items-center md:items-start md:justify-between gap-[44px] w-[709px]">
           <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
             <div className="justify-center items-center flex md:hidden">

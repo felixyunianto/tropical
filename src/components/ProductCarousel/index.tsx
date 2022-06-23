@@ -3,8 +3,8 @@ import { HeroImage } from "../../assets";
 
 const ProductCarousel = () => {
   return (
-    <div className="w-full flex justify-center items-center">
-      <div className="w-full max-w-[1366px] py-6 px-[90px] flex flex-col gap-6">
+    <div className="w-full flex justify-center items-center" id="produk-kami">
+      <div className="w-full max-w-[1366px] py-6 px-8 lg:px-[90px] flex flex-col gap-6">
         <div className="flex flex-col gap-[10px] items-center">
           <h1 className="text-3xl font-bold">Produk kami</h1>
           <div className="rounded-full w-[75px] h-[7px] bg-[#0091C0]"></div>

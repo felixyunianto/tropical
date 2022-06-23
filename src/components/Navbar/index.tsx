@@ -31,9 +31,9 @@ const Navbar = () => {
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0 flex justify-center bg-white h-[100px] z-10">
-      <div className="md:flex justify-between items-center bg-white py-4 max-w-[1366px] w-full md:px-[90px]">
-        <div className="cursor-pointer">
-          <img src={IsiRumahLogo} alt="" className="w-[145px] h-[52]" />
+      <div className="md:flex justify-between items-center bg-white py-4 max-w-[1366px] w-full px-8 lg:px-[90px]">
+        <div className="cursor-pointer lg:ml-0">
+          <img src={IsiRumahLogo} alt="" className="w-[145px] h-[52] -ml-2" />
         </div>
         <div
           className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
@@ -47,7 +47,7 @@ const Navbar = () => {
           }`}
         >
           {menus.map((menu, i) => (
-            <li key={i} className="md:ml-8 md:my-0 my-7">
+            <li key={i} className="md:ml-4 lg:ml-8 lg:my-0 my-7">
               <a
                 href={menu.link}
                 className="text-[#666666] font-medium hover:text-gray-400 duration-500"

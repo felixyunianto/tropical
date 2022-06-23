@@ -3,7 +3,7 @@ import { HeroImage } from "../../assets";
 
 const Consultation = () => {
   return (
-    <div className="w-full py-[46px] flex justify-center items-center px-7 lg:px-[90px]">
+    <div className="w-full pb-[46px] flex justify-center items-center px-7 lg:px-[90px]" id="konsultasi">
       <div className="w-full max-w-[1366px] lg:px-[90px] flex justify-center items-center ">
         <div
           className="w-full rounded-lg relative p-10 overflow-hidden h-[400px] bg-white"

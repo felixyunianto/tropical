@@ -1,9 +1,10 @@
 import IsiRumahLogo from "./isi-rumah-logo.png";
 
-import HeroImage from './hero.png';
+import HeroImage from "./hero.png";
+import AboutImage from "./about.png";
+import SquareImages from "./squares.png";
 
 import TropicalLogo from "./tropical-logo.png";
-
 
 import CarouselOne from "./carousel-1.webp";
 import CarouselTwo from "./carousel-2.webp";
@@ -28,7 +29,8 @@ import OrderReceivedImage from "./order-received.png";
 export {
   IsiRumahLogo,
   HeroImage,
-
+  AboutImage,
+  SquareImages,
   //OLD
   TropicalLogo,
   CarouselOne,

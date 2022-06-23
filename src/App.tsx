@@ -1,3 +1,4 @@
+import "swiper/css";
 import './App.css';
 import LandingPage from './pages';
 

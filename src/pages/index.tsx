@@ -1,5 +1,5 @@
 import React from "react";
-import { Consultation, Hero, Navbar, ProductCarousel } from "../components";
+import { About, Consultation, Footer, Gallery, Hero, Navbar, ProductCarousel, Testimonial } from "../components";
 
 const LandingPage = () => {
   return (
@@ -7,10 +7,13 @@ const LandingPage = () => {
       <Navbar />
       <Hero />
       <Consultation/>
-      {/* <Advantage /> */}
       <ProductCarousel />
+      <About />
+      <Gallery />
+      {/* <Advantage /> */}
       {/* <BuyFlow /> */}
-      {/* <Footer /> */}
+      <Testimonial />
+      <Footer />
     </div>
   );
 };

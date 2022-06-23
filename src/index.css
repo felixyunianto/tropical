@@ -4,6 +4,10 @@
 
 @import url("http://fonts.cdnfonts.com/css/times-new-roman");
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-hero {
   font-family: "Times New Roman", sans-serif;
 }
