@@ -1,12 +1,23 @@
 import React from "react";
-import { About, Consultation, Footer, Gallery, Hero, Navbar, ProductCarousel, Testimonial } from "../components";
+import {
+  About,
+  Consultation,
+  Footer,
+  Gallery,
+  Hero,
+  Navbar,
+  ProductCarousel,
+  Testimonial,
+} from "../components";
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
-      <Consultation/>
+      <div id="konsultasi">
+        <Consultation />
+      </div>
       <ProductCarousel />
       <About />
       <Gallery />
@@ -14,7 +25,7 @@ const LandingPage = () => {
       {/* <BuyFlow /> */}
       <Testimonial />
       <Footer />
-    </div>
+    </>
   );
 };
 

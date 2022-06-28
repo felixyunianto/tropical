@@ -1,0 +1,117 @@
+{
+  "name": "Sofa 2 Seater",
+  "data": [
+    {
+      "name": "Sofa Alya",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=14opwsgcd8F_M5ipL9PXNkeYbmvIpENOD"
+    },
+    {
+      "name": "Sofa Ava",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13FM7n563dgBXXfLUjVZPbE68WM3oEtSZ"
+    },
+    {
+      "name": "Sofa Cyrla",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13Em2j0mj4hut824xervVrYuUAZVqX-KV"
+    },
+    {
+      "name": "Sofa Eiga",
+      "category": "Sofa",
+      "price": 4250000,
+      "hpp": 2750000,
+      "margin": 1500000,
+      "photo": "https://drive.google.com/uc?id=164kmZih5HiZEIsntjfKhtlLh4NbNLVtJ"
+    },
+    {
+      "name": "Sofa Eterns",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13VulH0COjEoh97xU-DadBRHRX29u3x1B"
+    },
+    {
+      "name": "Sofa Grace",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13VWrQz-WsiK3V-XSJL9VHDZFbydk91C6"
+    },
+    {
+      "name": "Sofa Grande (2 Seat)",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=15xCA9n-kU4eEykrC-MbxEPl6HhiQ3IAv"
+    },
+    {
+      "name": "Sofa Hytro",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13QvtrD7asJCERMoC8NWCVGfzXJU762Zm"
+    },
+    {
+      "name": "Sofa Hyuga",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=15vqHfISyuQ_0iUtcGtTyMzyWNCU4paqB"
+    },
+    {
+      "name": "Sofa Retro",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13_R8GTqSaFGNepvAae0522B5PXwbjawU"
+    },
+    {
+      "name": "Sofa Rona",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13HWZBpJqImsTIn0Qmw0azWz2NW7mcxBN"
+    },
+    {
+      "name": "Sofa Sawn",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=14nybiz8MCliCfi_yrIoNfY4YKCrZmBII"
+    },
+    {
+      "name": "Sofa Scot",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13V7-2jhKiV_I3y7QnfB2kmMlkTZCu3td"
+    },
+    {
+      "name": "Sofa Yin",
+      "category": "Sofa",
+      "price": 3500000,
+      "hpp": 2250000,
+      "margin": 1250000,
+      "photo": "https://drive.google.com/uc?id=13TTsy7MkNhnLeiUmehoRI5Fob0MV-DxN"
+    }
+  ]
+}

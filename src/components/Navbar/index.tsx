@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IsiRumahLogo } from "../../assets";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -48,12 +49,16 @@ const Navbar = () => {
         >
           {menus.map((menu, i) => (
             <li key={i} className="md:ml-4 lg:ml-8 lg:my-0 my-7">
-              <a
-                href={menu.link}
-                className="text-[#666666] font-medium hover:text-gray-400 duration-500"
+              <Link
+                to={menu.link}
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="text-[#666666] font-medium hover:text-gray-400 duration-500 cursor-pointer"
               >
                 {menu.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
