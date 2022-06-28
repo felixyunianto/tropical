@@ -6,29 +6,51 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const menus = [
+  const [menus, setMenus] = useState([
     {
       name: "Konsultasi",
       link: "#konsultasi",
+      active: false,
     },
 
     {
       name: "Produk Kami",
       link: "#produk",
+      active: false,
     },
     {
       name: "Tentang Kami",
       link: "#tentang-kami",
+      active: false,
     },
     {
       name: "Galeri Kami",
       link: "#galeri-kami",
+      active: false,
     },
     {
       name: "Testimoni",
       link: "#testimoni",
+      active: false,
     },
-  ];
+  ]);
+
+  const clickNavbar = (link: string) => {
+    const tempMenus = [...menus];
+
+    tempMenus.forEach((menu) => {
+      console.log(menu.link === link)
+      if (menu.link === link) {
+        menu.active = true;
+      } else {
+        menu.active = false;
+      }
+    });
+
+    setMenus(tempMenus);
+
+    setOpen(false);
+  };
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0 flex justify-center bg-white h-[100px] z-10">
@@ -40,6 +62,7 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={300}
+            onClick={() => clickNavbar("hero")}
           >
             <img src={IsiRumahLogo} alt="" className="w-[145px] h-[52] -ml-2" />
           </Link>
@@ -63,16 +86,11 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={300}
-                className="text-[#666666] font-medium hover:text-gray-400 duration-500 cursor-pointer"
+                className={`text-[#666666] font-medium hover:text-gray-400 duration-500 cursor-pointer ${menu.active && "text-[#0091C0] font-bold"}`}
+                onClick={() => clickNavbar(menu.link)}
               >
                 {menu.name}
               </Link>
-              {/* <a
-                href={menu.link}
-                className="text-[#666666] font-medium hover:text-gray-400 duration-500 cursor-pointer"
-              >
-                {menu.name}
-              </a> */}
             </li>
           ))}
         </ul>
