@@ -14,7 +14,7 @@ const Navbar = () => {
 
     {
       name: "Produk Kami",
-      link: "#produk-kami",
+      link: "#produk",
     },
     {
       name: "Tentang Kami",
@@ -34,7 +34,15 @@ const Navbar = () => {
     <div className="shadow-md w-full fixed top-0 left-0 flex justify-center bg-white h-[100px] z-10">
       <div className="md:flex justify-between items-center bg-white py-4 max-w-[1366px] w-full px-8 lg:px-[90px]">
         <div className="cursor-pointer lg:ml-0">
-          <img src={IsiRumahLogo} alt="" className="w-[145px] h-[52] -ml-2" />
+          <Link
+            to={"#hero"}
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={300}
+          >
+            <img src={IsiRumahLogo} alt="" className="w-[145px] h-[52] -ml-2" />
+          </Link>
         </div>
         <div
           className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
@@ -53,12 +61,18 @@ const Navbar = () => {
                 to={menu.link}
                 spy={true}
                 smooth={true}
-                offset={50}
-                duration={500}
+                offset={-100}
+                duration={300}
                 className="text-[#666666] font-medium hover:text-gray-400 duration-500 cursor-pointer"
               >
                 {menu.name}
               </Link>
+              {/* <a
+                href={menu.link}
+                className="text-[#666666] font-medium hover:text-gray-400 duration-500 cursor-pointer"
+              >
+                {menu.name}
+              </a> */}
             </li>
           ))}
         </ul>

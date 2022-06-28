@@ -1,4 +1,5 @@
 import React from "react";
+import { Element } from "react-scroll";
 import {
   About,
   Consultation,
@@ -14,16 +15,30 @@ const LandingPage = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <div id="konsultasi">
+      <Element name="#hero">
+        <Hero />
+      </Element>
+
+      <Element name="#konsultasi">
         <Consultation />
-      </div>
-      <ProductCarousel />
-      <About />
-      <Gallery />
-      {/* <Advantage /> */}
-      {/* <BuyFlow /> */}
-      <Testimonial />
+      </Element>
+
+      <Element name="#produk">
+        <ProductCarousel />
+      </Element>
+
+      <Element name="#tentang-kami">
+        <About />
+      </Element>
+
+      <Element name="#galeri-kami">
+        <Gallery />
+      </Element>
+
+      <Element name="#testimoni">
+        <Testimonial />
+      </Element>
+
       <Footer />
     </>
   );
