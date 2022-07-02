@@ -14,7 +14,7 @@ const Gallery = () => {
     <div className="w-full flex items-center justify-center py-6 pb-10">
       <div className="w-full flex flex-col justify-center items-center max-w-[1366px] xl:px-[90px] px-0 gap-6">
         <div className="flex flex-col gap-[10px] items-center">
-          <h1 className="text-3xl font-bold">Galeri kami</h1>
+          <h1 className="text-lg md:text-xl lg:text-3xl font-bold">Galeri kami</h1>
           <div className="rounded-full w-[75px] h-[7px] bg-[#0091C0]"></div>
         </div>
         <div className="w-full flex items-center gap-[18px]">
