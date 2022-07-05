@@ -4,6 +4,8 @@ import HeroImage from "./hero.png";
 import AboutImage from "./about.png";
 import SquareImages from "./squares.png";
 
+import ComingSoonImage from './coming-soon.svg';
+
 import TropicalLogo from "./tropical-logo.png";
 
 import CarouselOne from "./carousel-1.webp";
@@ -31,6 +33,7 @@ export {
   HeroImage,
   AboutImage,
   SquareImages,
+  ComingSoonImage,
   //OLD
   TropicalLogo,
   CarouselOne,

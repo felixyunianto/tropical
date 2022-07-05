@@ -4,6 +4,7 @@ import Consultation from "./Consultation";
 import About from './About';
 import Gallery from "./Gallery";
 import Testimonial from "./Testimonial";
+import ComingSoon from "./ComingSoon";
 
 import Advantage from "./Advantage";
 import ProductCarousel from "./ProductCarousel";
@@ -18,6 +19,7 @@ export {
   Gallery,
   Testimonial,
   Footer,
+  ComingSoon,
   Advantage,
   ProductCarousel,
   BuyFlow,

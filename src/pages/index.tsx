@@ -1,20 +1,21 @@
 import React from "react";
-import { Element } from "react-scroll";
+// import { Element } from "react-scroll";
 import {
-  About,
-  Consultation,
-  Footer,
-  Gallery,
-  Hero,
-  Navbar,
-  ProductCarousel,
-  Testimonial,
+  // About,
+  ComingSoon,
+  // Consultation,
+  // Footer,
+  // Gallery,
+  // Hero,
+  // Navbar,
+  // ProductCarousel,
+  // Testimonial,
 } from "../components";
 
 const LandingPage = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Element name="#hero">
         <Hero />
       </Element>
@@ -39,7 +40,8 @@ const LandingPage = () => {
         <Testimonial />
       </Element>
 
-      <Footer />
+      <Footer /> */}
+      <ComingSoon />
     </>
   );
 };
