@@ -1,5 +1,5 @@
 import React from "react";
-// import { Element } from "react-scroll";
+import { Element } from "react-scroll";
 import {
   // About,
   ComingSoon,
@@ -14,7 +14,7 @@ import {
 
 const LandingPage = () => {
   return (
-    <>
+    <div className="relative">
       {/* <Navbar />
       <Element name="#hero">
         <Hero />
@@ -42,7 +42,7 @@ const LandingPage = () => {
 
       <Footer /> */}
       <ComingSoon />
-    </>
+    </div>
   );
 };
 
