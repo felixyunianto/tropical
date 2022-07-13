@@ -25,9 +25,9 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-[10px] md:px-[10px] mt-6 md:mt-0">
             <div className="text-[18px] font-bold">Sosial Media</div>
-            <a className="cursor-pointer hover:text-[#FF6A61]" href="#"><p className="text-justify">Instagram</p></a>
-            <a className="cursor-pointer hover:text-[#FF6A61]" href="#"><p className="text-justify">Facebook</p></a>
-            <a className="cursor-pointer hover:text-[#FF6A61]" href="#"><p className="text-justify">Email</p></a>
+            <a className="cursor-pointer hover:text-[#FF6A61]" href="javascript:void(0);"><p className="text-justify">Instagram</p></a>
+            <a className="cursor-pointer hover:text-[#FF6A61]" href="javascript:void(0);"><p className="text-justify">Facebook</p></a>
+            <a className="cursor-pointer hover:text-[#FF6A61]" href="javascript:void(0);"><p className="text-justify">Email</p></a>
           </div>
         </div>
       </div>
