@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiX, FiXCircle } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 import { productDataJSON } from "../../dummy";
 
 const ProductCarousel = () => {
