@@ -6,17 +6,17 @@ SwiperCore.use([Autoplay]);
 
 const Hero = () => {
   return (
-    <div className="w-full flex justify-center items-center mt-[100px] bg-[#0091C0]">
+    <div className="w-full flex justify-center items-center mt-[100px] bg-gradient-to-r from-[#FEF9F6] to-white">
       <div className="w-full flex items-center lg:px-[90px] max-w-[1366px]">
         <div className="flex-auto px-8 md:pr-[90px] py-[64px] flex flex-col items-center md:items-start md:justify-between gap-[44px] w-[709px]">
           <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
             <div className="justify-center items-center flex md:hidden">
               <img src={HeroImage} alt="" width="384" />
             </div>
-            <h1 className="font-bold text-white text-3xl md:text-5xl">
-              Pilih Furnitur Pilihan Terbaik Kami
+            <h1 className="font-bold text-3xl md:text-5xl">
+              Tempat jual beli produk furniture anda
             </h1>
-            <p className="font-normal text-[16px] text-white">
+            <p className="font-normal text-[16px]">
               Kami berdiri untuk keindahan & gaya di rumah Anda. Kami memiliki
               pilihan furnitur yang mengesankan yang menjadi favorit anda dan
               pasti anda sukai.
@@ -25,7 +25,7 @@ const Hero = () => {
               <button className="rounded-lg px-6 py-4 bg-[#FF6A61] uppercase text-[12px] md:text-[16px] font-bold text-white">
                 KONSULTASI GRATIS
               </button>
-              <button className="rounded-lg px-6 py-4 bg-white uppercase text-[12px] md:text-[16px] font-bold text-black">
+              <button className="rounded-lg px-6 py-4 bg-[#EBC386] uppercase text-[12px] md:text-[16px] font-bold text-black">
                 CEK KATALOG
               </button>
             </div>

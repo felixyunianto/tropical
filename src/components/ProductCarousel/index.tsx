@@ -37,7 +37,7 @@ const ProductCarousel = () => {
             <h1 className="text-lg md:text-xl lg:text-3xl font-bold">
               Produk kami
             </h1>
-            <div className="rounded-full w-[75px] h-[7px] bg-[#0091C0]"></div>
+            <div className="rounded-full w-[75px] h-[7px] bg-[#EBC386]"></div>
           </div>
           <div className="w-full flex flex-col gap-1">
             <ul className="flex overflow-y-auto text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 scrollbar-hide">
@@ -51,7 +51,7 @@ const ProductCarousel = () => {
                     aria-current="page"
                     className={`inline-block text-xs md:text-sm lg:text-base rounded-t-lg p-4 ${
                       tab === index
-                        ? "text-blue-600 bg-gray-100  active"
+                        ? "text-black bg-gray-100  active"
                         : "hover:text-gray-600 hover:bg-gray-50"
                     }`}
                   >
@@ -132,7 +132,7 @@ const ProductCard = (props: ProductCardProsp) => {
           className="flex-1"
         />
       </div>
-      <div className="absolute -bottom-full left-[8px] right-[8px] bg-[#dfdfdf] rounded-lg flex-col items-center p-4 gap-[10px] group-hover:bottom-[8px] transition-all duration-300">
+      <div className="absolute -bottom-full left-[8px] right-[8px] bg-[#f0f0f0] rounded-lg flex-col items-center p-4 gap-[10px] group-hover:bottom-[8px] transition-all duration-300">
         <div className="w-full font-bold text-[#AFAFAF] text-xs">
           {data.category}
         </div>
@@ -141,11 +141,11 @@ const ProductCard = (props: ProductCardProsp) => {
           {data.price ? formatCurrency(data.price) : 0}
         </div>
         <div className="w-full text-base">2 x 3 x 5 (meter)</div>
-        <button className="py-[4px] rounded-lg bg-[#0091C0] w-full font-bold mt-2 text-white">
+        <button className="py-[4px] rounded-lg bg-[#EBC386] w-full font-bold mt-2 text-black">
           Beli
         </button>
         <button
-          className="py-[4px] rounded-lg bg-[#0091C0] w-full font-bold mt-2 text-white"
+          className="py-[4px] rounded-lg bg-[#EBC386] w-full font-bold mt-2 text-black"
           onClick={() => {
             data.description ? shoDesc(
               data.description

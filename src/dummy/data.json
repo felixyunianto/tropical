@@ -199,7 +199,7 @@
         "hpp": 3500000,
         "margin": 2000000,
         "photo": "https://drive.google.com/uc?id=14dyLg2WUjl0WQVsG0Mu-W4igWq6UnbRY",
-        "description": null
+        "description" : null
       },
       {
         "name": "Sofa L Freyya",
@@ -208,7 +208,7 @@
         "hpp": 3500000,
         "margin": 2000000,
         "photo": "https://drive.google.com/uc?id=14USc_vK7HwkJrbeh_aqHYBaPEQGRM4ub",
-        "description": null
+        "description" : null
       },
       {
         "name": "Sofa L Georgia",
@@ -216,8 +216,8 @@
         "price": 6250000,
         "hpp": 3850000,
         "margin": 2400000,
-        "photo": "https://drive.google.com/uc?id=14XTl6wGkYQXtqW-huI8UN4VjaM7sv44X",
-        "description": null
+        "photo": "https://drive.google.com/uc?id=1AXBsiIwkokt5TbQWhkaLG6iaqkLW4Mrf",
+        "description" : null
       },
       {
         "name": "Sofa L Heyna",
@@ -225,8 +225,8 @@
         "price": 5500000,
         "hpp": 3500000,
         "margin": 2000000,
-        "photo": "https://drive.google.com/uc?id=14jjWtYZJO3H144tlJpSoHeV12Urs6HOF",
-        "description": null
+        "photo": "https://drive.google.com/uc?id=1ApKLQ1qqjITwFFcjsFR4MtJUkYmDQr_U",
+        "description" : null
       },
       {
         "name": "Sofa L Keith",
@@ -234,8 +234,8 @@
         "price": 7000000,
         "hpp": 4000000,
         "margin": 3000000,
-        "photo": "https://drive.google.com/uc?id=14car27L1TNNtOkylJR_RPzd5287qi9IV",
-        "description": null
+        "photo": "https://drive.google.com/uc?id=1AX2pokw6mdp2JhO4gIEoQDcHg65vTq50",
+        "description" : null
       },
       {
         "name": "Sofa L Viona",
@@ -243,8 +243,8 @@
         "price": 8000000,
         "hpp": 4350000,
         "margin": 3650000,
-        "photo": "https://drive.google.com/uc?id=14lGX5fY0NVqrDttq654Ml_X5oZO-8oNz",
-        "description": null
+        "photo": "https://drive.google.com/uc?id=1AbEBvSNUSVDHV-9C6SwP1SrT4ZBixQ0z",
+        "description" : null
       },
       {
         "name": "Sofa Oigo",
@@ -252,8 +252,17 @@
         "price": 5500000,
         "hpp": 3500000,
         "margin": 2000000,
-        "photo": "https://drive.google.com/uc?id=14aS3kxLHaa9tYfS8NZCx15pe9TSJozHb",
-        "description": null
+        "photo": "https://drive.google.com/uc?id=1AVyPQFfBa1S5R4uWwJJbZdcoMzNOg--s",
+        "description" : null
+      },
+      {
+        "name": "Sofa L Bosava",
+        "category": "Sofa",
+        "price": 5500000,
+        "hpp": 3500000,
+        "margin": 2000000,
+        "photo": "https://drive.google.com/uc?id=1AbhQL4eDWnG5UZ3VFmnsKnwAbq9uvTay",
+        "description" : null
       }
     ]
   }

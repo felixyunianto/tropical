@@ -17,13 +17,11 @@
   margin: 0px;
   transition: all 0.7s ease;
   align-self: center;
-  border-radius: 8px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .swiper-slide.swiper-slide-testimonial.swiper-slide-active {
-  background: white;
   z-index: 2;
 }
 

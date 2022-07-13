@@ -26,7 +26,7 @@ const Consultation = () => {
                   <span
                     className={`inline-flex w-48 md:w-52 lg:w-60 justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
                       tab === 0
-                        ? "text-blue-600 bg-gray-100 active"
+                        ? "text-black bg-gray-100 active"
                         : "hover:text-gray-600 hover:bg-gray-50"
                     }`}
                   >
@@ -40,7 +40,7 @@ const Consultation = () => {
                   <span
                     className={`inline-flex w-48 md:w-52 lg:w-60 justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
                       tab === 1
-                        ? "text-blue-600 bg-gray-100 active"
+                        ? "text-black bg-gray-100 active"
                         : "hover:text-gray-600 hover:bg-gray-50"
                     }`}
                   >
@@ -54,7 +54,7 @@ const Consultation = () => {
                   <span
                     className={`inline-flex w-48 md:w-52 lg:w-60 justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
                       tab === 2
-                        ? "text-blue-600 bg-gray-100 active"
+                        ? "text-black bg-gray-100 active"
                         : "hover:text-gray-600 hover:bg-gray-50"
                     }`}
                   >
@@ -68,7 +68,7 @@ const Consultation = () => {
                   <span
                     className={`inline-flex w-48 md:w-52 lg:w-60 justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
                       tab === 3
-                        ? "text-blue-600 bg-gray-100 active"
+                        ? "text-black bg-gray-100 active"
                         : "hover:text-gray-600 hover:bg-gray-50"
                     }`}
                   >
@@ -144,7 +144,7 @@ const Consultation = () => {
               )}
             </div>
           </div>
-          <div className="absolute rounded-full w-[268px] hidden md:flex  md:w-[368px] md:h-[368px] bg-[#0091C0] -bottom-1/4 -right-24  justify-center items-center">
+          <div className="absolute rounded-full w-[268px] hidden md:flex  md:w-[368px] md:h-[368px] bg-[#EBC386] -bottom-1/4 -right-24  justify-center items-center">
             <img src={HeroImage} alt="" width="295" />
           </div>
         </div>

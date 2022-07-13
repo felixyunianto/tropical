@@ -1,21 +1,21 @@
 import React from "react";
 import { Element } from "react-scroll";
 import {
-  // About,
-  ComingSoon,
-  // Consultation,
-  // Footer,
-  // Gallery,
-  // Hero,
-  // Navbar,
-  // ProductCarousel,
-  // Testimonial,
+  About,
+  // ComingSoon,
+  Consultation,
+  Footer,
+  Gallery,
+  Hero,
+  Navbar,
+  ProductCarousel,
+  Testimonial,
 } from "../components";
 
 const LandingPage = () => {
   return (
     <div className="relative">
-      {/* <Navbar />
+      <Navbar />
       <Element name="#hero">
         <Hero />
       </Element>
@@ -40,8 +40,8 @@ const LandingPage = () => {
         <Testimonial />
       </Element>
 
-      <Footer /> */}
-      <ComingSoon />
+      <Footer />
+      {/* <ComingSoon /> */}
     </div>
   );
 };

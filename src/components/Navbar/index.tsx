@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { IsiRumahLogo } from "../../assets";
+import { TropicalLogo } from "../../assets";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-scroll";
 
@@ -64,7 +64,7 @@ const Navbar = () => {
             duration={300}
             onClick={() => clickNavbar("hero")}
           >
-            <img src={IsiRumahLogo} alt="" className="w-[145px] h-[52] -ml-2" />
+            <img src={TropicalLogo} alt="" className="w-[145px] h-[52] -ml-2" />
           </Link>
         </div>
         <div
@@ -86,7 +86,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={300}
-                className={`text-[#666666] font-medium hover:text-gray-400 duration-500 cursor-pointer ${menu.active && "text-[#0091C0] font-bold"}`}
+                className={`text-[#666666] font-medium hover:text-[#EBC386] duration-500 cursor-pointer ${menu.active && "text-[#EBC386] font-bold"}`}
                 onClick={() => clickNavbar(menu.link)}
               >
                 {menu.name}
