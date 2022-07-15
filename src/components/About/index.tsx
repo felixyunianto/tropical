@@ -20,14 +20,21 @@ const About = () => {
               height={82}
             />
             <div className="flex flex-col h-full gap-[10px] flex-1 z-[1]">
-              <h1 className="uppercase font-bold text-xs md:text-sm lg:text-base">Tentang</h1>
-              <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl">Isi Rumah</h1>
-              <h1 className="font-bold text-xs md:text-sm lg:text-base">Furniture Masa Depan</h1>
+              <h1 className="uppercase font-bold text-xs md:text-sm lg:text-base">
+                Tentang
+              </h1>
+              <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl">
+                Tropical Furniture
+              </h1>
+              <h1 className="font-bold text-xs md:text-sm lg:text-base">
+                Furniture Masa Depan
+              </h1>
               <p className="mt-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat
+                TROPICAL merupakan perusahaan pembuat Furniture dengan kualitas
+                terbaik dan konsultan untuk perabot rumah anda. Tropical berdiri
+                sejak tahun 2020, Kota Malang, Pabrikasi di Pakisaji kabupaten
+                Malang. Berlokasi di Jalan Dirgantara III B2/17, sawojajar Kota
+                Malang
               </p>
             </div>
           </div>
