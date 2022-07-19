@@ -5,6 +5,15 @@ import { HeroImage } from "../../assets";
 SwiperCore.use([Autoplay]);
 
 const Hero = () => {
+  const chatToWhatsApp = () => {
+    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+
+    let message = `Halo min, \nSaya pengin konsultasi nih`;
+
+    url += `&text=${encodeURI(message)}&app_absent=0`;
+    window.open(url);
+  };
+
   return (
     <div className="w-full flex justify-center items-center mt-[100px] bg-gradient-to-r from-[#FEF9F6] to-white">
       <div className="w-full flex items-center lg:px-[90px] max-w-[1366px]">
@@ -22,7 +31,10 @@ const Hero = () => {
               pasti anda sukai.
             </p>
             <div className="flex gap-[10px] flex-row items-center md:items-center">
-              <button className="rounded-lg px-6 py-4 bg-[#FF6A61] uppercase text-[12px] md:text-[16px] font-bold text-white">
+              <button
+                className="rounded-lg px-6 py-4 bg-[#FF6A61] uppercase text-[12px] md:text-[16px] font-bold text-white"
+                onClick={() => chatToWhatsApp()}
+              >
                 KONSULTASI GRATIS
               </button>
               <button className="rounded-lg px-6 py-4 bg-[#EBC386] uppercase text-[12px] md:text-[16px] font-bold text-black">

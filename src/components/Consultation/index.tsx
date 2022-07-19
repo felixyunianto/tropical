@@ -3,6 +3,34 @@ import { HeroImage } from "../../assets";
 
 const Consultation = () => {
   const [tab, setTab] = useState(0);
+
+  const chatToWhatsAppMaterial = () => {
+    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+
+    let message = `Halo min, \nSaya pengin konsultasi tentang bahan dan jenis sofa.`;
+
+    url += `&text=${encodeURI(message)}&app_absent=0`;
+    window.open(url);
+  };
+
+  const chatToWhatsAppCategory = () => {
+    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+
+    let message = `Halo min, \nSaya pengin konsultasi tentang kategori produk yang disediakan.`;
+
+    url += `&text=${encodeURI(message)}&app_absent=0`;
+    window.open(url);
+  };
+
+  const chatToWhatsAppCustomProduct = () => {
+    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+
+    let message = `Halo min, \nSaya pengin konsultasi tentang kustom produk di tropical.`;
+
+    url += `&text=${encodeURI(message)}&app_absent=0`;
+    window.open(url);
+  };
+
   return (
     <div
       className="w-full pt-6 pb-[46px] flex justify-center items-center px-7 lg:px-[90px]"
@@ -99,6 +127,14 @@ const Consultation = () => {
                       seharian beraktifitas.
                     </li>
                   </ul>
+                  <div className="">
+                    <button
+                      className="text-white bg-[#FF6A61] rounded-lg px-3 py-2 font-bold text-xs mt-6"
+                      onClick={() => chatToWhatsAppMaterial()}
+                    >
+                      Chat Admin
+                    </button>
+                  </div>
                 </div>
               )}
 
@@ -131,6 +167,15 @@ const Consultation = () => {
                     <li className="text-xs ml-4">Meja & Kursi Makan</li>
                     <li className="text-xs ml-4">Meja tamu & Nakas</li>
                   </ul>
+
+                  <div className="">
+                    <button
+                      className="text-white bg-[#FF6A61] rounded-lg px-3 py-2 font-bold text-xs mt-6"
+                      onClick={() => chatToWhatsAppCategory()}
+                    >
+                      Chat Admin
+                    </button>
+                  </div>
                 </div>
               )}
 
@@ -138,8 +183,18 @@ const Consultation = () => {
                 <div className="w-full flex-1 flex flex-col p-2 bg-white">
                   <span className="text-sm">Bisa custom</span>
                   <p className="pt-4 text-xs">
-                  Bisa banget, kalian ngga akan kesulitan untuk memilih ukuran sesuai ukuran ruangan rumah anda dan jenis bahan produk furniture di isirumah 
+                    Bisa banget, kalian ngga akan kesulitan untuk memilih ukuran
+                    sesuai ukuran ruangan rumah anda dan jenis bahan produk
+                    furniture di isirumah
                   </p>
+                  <div className="">
+                    <button
+                      className="text-white bg-[#FF6A61] rounded-lg px-3 py-2 font-bold text-xs mt-6"
+                      onClick={() => chatToWhatsAppCustomProduct()}
+                    >
+                      Chat Admin
+                    </button>
+                  </div>
                 </div>
               )}
             </div>
