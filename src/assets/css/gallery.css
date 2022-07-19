@@ -17,17 +17,18 @@
   justify-content: center;
   align-items: center;
   margin: 0px;
-  background: red;
   transition: all 0.7s ease;
   height: 254px;
   width: 475px;
   align-self: center;
   border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .swiper-slide.swiper-slide-gallery.swiper-slide-active {
   color: #fff;
-  background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
   height: 254px;
   width: 475px;
   z-index: 2;
@@ -36,9 +37,8 @@
 @media screen and (min-width: 1024px) {
   .swiper-slide.swiper-slide-gallery.swiper-slide-active {
     color: #fff;
-    background: linear-gradient(45deg, rgb(246, 146, 89), rgb(241, 105, 117));
     width: 540px;
-    height: 300px;
+    height: 295px;
     z-index: 2;
   }
 

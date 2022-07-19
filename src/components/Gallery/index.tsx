@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "../../assets/css/gallery.css";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { galleryDataJSON } from '../../dummy'
+
 
 SwiperCore.use([Autoplay]);
 
@@ -69,10 +71,11 @@ const Gallery = () => {
               },
             }}
           >
-            <SwiperSlide className="swiper-slide-gallery">Slide 1</SwiperSlide>
-            <SwiperSlide className="swiper-slide-gallery">Slide 2</SwiperSlide>
-            <SwiperSlide className="swiper-slide-gallery">Slide 3</SwiperSlide>
-            <SwiperSlide className="swiper-slide-gallery">Slide 4</SwiperSlide>
+            {galleryDataJSON.map((gallery, index) => (
+              <SwiperSlide key={index} className="swiper-slide-gallery" style={{marginBottom : 8, marginTop : 8}}>
+                <img src={gallery.image} alt="gallery" style={{objectFit : 'fill', height : "100%", width : "100%",  borderRadius : 8}} />
+              </SwiperSlide>
+            ))}
           </Swiper>
           <div className="w-1/12 hidden md:block">
             <button
