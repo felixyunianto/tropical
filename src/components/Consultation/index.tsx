@@ -7,7 +7,7 @@ const Consultation = () => {
   const chatToWhatsAppMaterial = () => {
     let url = `https://web.whatsapp.com/send?phone=6287848114793`;
 
-    let message = `Halo min, \nSaya pengin konsultasi tentang bahan dan jenis sofa.`;
+    let message = `KONSULTASI - Hai admin mau tanya dong bahan dan jenis sofa di tropical furniture`;
 
     url += `&text=${encodeURI(message)}&app_absent=0`;
     window.open(url);
@@ -16,7 +16,7 @@ const Consultation = () => {
   const chatToWhatsAppCategory = () => {
     let url = `https://web.whatsapp.com/send?phone=6287848114793`;
 
-    let message = `Halo min, \nSaya pengin konsultasi tentang kategori produk yang disediakan.`;
+    let message = `KONSULTASI - Hai admin mau tanya dong Kategori produk apa saja di tropical furniture?`;
 
     url += `&text=${encodeURI(message)}&app_absent=0`;
     window.open(url);
@@ -25,7 +25,7 @@ const Consultation = () => {
   const chatToWhatsAppCustomProduct = () => {
     let url = `https://web.whatsapp.com/send?phone=6287848114793`;
 
-    let message = `Halo min, \nSaya pengin konsultasi tentang kustom produk di tropical.`;
+    let message = `KONSULTASI - Hai admin mau tanya dong apa bisa custom produk di tropical furniture?`;
 
     url += `&text=${encodeURI(message)}&app_absent=0`;
     window.open(url);
@@ -46,13 +46,13 @@ const Consultation = () => {
               Konsultasi dengan kami
             </h1>
             <div className="w-full z-[1] flex flex-col items-start flex-1 h-full">
-              <ul className="flex overflow-y-scroll text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 scrollbar-hide">
+              <ul className="flex lg:w-full lg:grid lg:gap-2 lg:grid-cols-3 overflow-y-scroll text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 scrollbar-hide">
                 <li
                   className="mr-2 cursor-pointer w-full"
                   onClick={() => setTab(0)}
                 >
                   <span
-                    className={`inline-flex w-48 md:w-52 lg:w-60 justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
+                    className={`inline-flex w-48 md:w-52 lg:w-full justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
                       tab === 0
                         ? "text-black bg-gray-100 active"
                         : "hover:text-gray-600 hover:bg-gray-50"
@@ -66,7 +66,7 @@ const Consultation = () => {
                   onClick={() => setTab(1)}
                 >
                   <span
-                    className={`inline-flex w-48 md:w-52 lg:w-60 justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
+                    className={`inline-flex w-48 md:w-52 lg:w-full justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
                       tab === 1
                         ? "text-black bg-gray-100 active"
                         : "hover:text-gray-600 hover:bg-gray-50"
@@ -80,27 +80,13 @@ const Consultation = () => {
                   onClick={() => setTab(2)}
                 >
                   <span
-                    className={`inline-flex w-48 md:w-52 lg:w-60 justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
+                    className={`inline-flex w-48 md:w-52 lg:w-full justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
                       tab === 2
                         ? "text-black bg-gray-100 active"
                         : "hover:text-gray-600 hover:bg-gray-50"
                     }`}
                   >
                     Bisa Custom Produk?
-                  </span>
-                </li>
-                <li
-                  className="mr-2 cursor-pointer w-full"
-                  onClick={() => setTab(3)}
-                >
-                  <span
-                    className={`inline-flex w-48 md:w-52 lg:w-60 justify-center text-xs lg:text-sm bg-gray-100 rounded-t-lg p-2 h-fit ${
-                      tab === 3
-                        ? "text-black bg-gray-100 active"
-                        : "hover:text-gray-600 hover:bg-gray-50"
-                    }`}
-                  >
-                    Harga & Ongkir
                   </span>
                 </li>
               </ul>

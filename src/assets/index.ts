@@ -1,6 +1,10 @@
 import IsiRumahLogo from "./isi-rumah-logo.png";
 
 import HeroImage from "./hero.png";
+import Hero1Image from "./hero1.jpeg";
+import Hero2Image from "./hero2.jpeg";
+
+
 import AboutImage from "./about.png";
 import SquareImages from "./squares.png";
 
@@ -31,6 +35,8 @@ import OrderReceivedImage from "./order-received.png";
 export {
   IsiRumahLogo,
   HeroImage,
+  Hero1Image,
+  Hero2Image,
   AboutImage,
   SquareImages,
   ComingSoonImage,

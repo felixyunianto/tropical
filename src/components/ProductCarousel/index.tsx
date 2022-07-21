@@ -13,6 +13,7 @@ const ProductCarousel = () => {
     document.querySelector("body")!.style.overflow = "auto";
   };
 
+
   return (
     <>
       <div
@@ -73,6 +74,7 @@ const ProductCarousel = () => {
                     <div className="" key={index}>
                       <ProductCard
                         data={sofa}
+                        type={item.title}
                         setDesc={(description: string) => {
                           setDesc(description);
                         }}
@@ -98,12 +100,13 @@ interface ProductCardProsp {
     photo?: string;
     description?: string | null;
   };
+  type : string;
   setDesc: any;
   setPopDesc: any;
 }
 
 const ProductCard = (props: ProductCardProsp) => {
-  const { data, setDesc, setPopDesc } = props;
+  const { data, type, setDesc, setPopDesc } = props;
 
   const formatCurrency = (price: number): string => {
     const formatter = new Intl.NumberFormat("id-ID", {
@@ -120,6 +123,15 @@ const ProductCard = (props: ProductCardProsp) => {
     setPopDesc(true);
     document.querySelector("body")!.style.overflow = "hidden";
   };
+
+  const chatProduct = (type : string, product_name : string) => {
+    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+
+    let message = `TANYA PRODUK - Hai admin aku mau tanya dong  produk ${type} apakah produk ${product_name} masih ada stoknya di tropical furniture?`;
+
+    url += `&text=${encodeURI(message)}&app_absent=0`;
+    window.open(url);
+  }
 
   return (
     <div className="py-[87px] rounded-lg bg-[#fff] hover:bg-[#fff] shadow-sm border px-[32px] flex justify-center items-center relative group overflow-hidden cursor-pointer h-80">
@@ -141,7 +153,10 @@ const ProductCard = (props: ProductCardProsp) => {
           {data.price ? formatCurrency(data.price) : 0}
         </div>
         <div className="w-full text-base">2 x 3 x 5 (meter)</div>
-        <button className="py-[4px] rounded-lg bg-[#EBC386] w-full font-bold mt-2 text-black">
+        <button className="py-[4px] rounded-lg bg-[#EBC386] w-full font-bold mt-2 text-black"
+        onClick={() => {
+          chatProduct(type, data.name!)
+        }}>
           Beli
         </button>
         <button

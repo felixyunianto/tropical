@@ -1,7 +1,7 @@
 import React from "react";
 import SwiperCore, { Autoplay } from "swiper";
 
-import { HeroImage } from "../../assets";
+import { Hero1Image, HeroImage } from "../../assets";
 SwiperCore.use([Autoplay]);
 
 const Hero = () => {
@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-[657px] justify-center items-center hidden md:flex">
-          <img src={HeroImage} alt="" width="384" />
+          <img src={Hero1Image} alt="" width="300" />
         </div>
       </div>
     </div>
