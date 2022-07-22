@@ -5,7 +5,7 @@ const Consultation = () => {
   const [tab, setTab] = useState(0);
 
   const chatToWhatsAppMaterial = () => {
-    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+    let url = `https://web.whatsapp.com/send?phone=6281334091665`;
 
     let message = `KONSULTASI - Hai admin mau tanya dong bahan dan jenis sofa di tropical furniture`;
 
@@ -14,7 +14,7 @@ const Consultation = () => {
   };
 
   const chatToWhatsAppCategory = () => {
-    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+    let url = `https://web.whatsapp.com/send?phone=6281334091665`;
 
     let message = `KONSULTASI - Hai admin mau tanya dong Kategori produk apa saja di tropical furniture?`;
 
@@ -23,7 +23,7 @@ const Consultation = () => {
   };
 
   const chatToWhatsAppCustomProduct = () => {
-    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+    let url = `https://web.whatsapp.com/send?phone=6281334091665`;
 
     let message = `KONSULTASI - Hai admin mau tanya dong apa bisa custom produk di tropical furniture?`;
 

@@ -6,7 +6,7 @@ SwiperCore.use([Autoplay]);
 
 const Hero = () => {
   const chatToWhatsApp = () => {
-    let url = `https://web.whatsapp.com/send?phone=6287848114793`;
+    let url = `https://web.whatsapp.com/send?phone=6281334091665`;
 
     let message = `Halo min, \nSaya pengin konsultasi nih`;
 
