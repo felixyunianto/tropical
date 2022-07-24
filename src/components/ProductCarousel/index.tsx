@@ -125,7 +125,7 @@ const ProductCard = (props: ProductCardProsp) => {
   };
 
   const chatProduct = (type : string, product_name : string) => {
-    let url = `https://web.whatsapp.com/send?phone=6281334091665`;
+    let url = `https://api.whatsapp.com/send?phone=6281334091665`;
 
     let message = `TANYA PRODUK - Hai admin aku mau tanya dong  produk ${type} apakah produk ${product_name} masih ada stoknya di tropical furniture?`;
 

@@ -1,12 +1,12 @@
 import React from "react";
 import SwiperCore, { Autoplay } from "swiper";
 
-import { Hero1Image, HeroImage } from "../../assets";
+import { HeroImage } from "../../assets";
 SwiperCore.use([Autoplay]);
 
 const Hero = () => {
   const chatToWhatsApp = () => {
-    let url = `https://web.whatsapp.com/send?phone=6281334091665`;
+    let url = `https://api.whatsapp.com/send?phone=6281334091665`;
 
     let message = `Halo min, \nSaya pengin konsultasi nih`;
 
@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-[657px] justify-center items-center hidden md:flex">
-          <img src={Hero1Image} alt="" width="300" />
+          <img src={HeroImage} alt="" width="384" />
         </div>
       </div>
     </div>
