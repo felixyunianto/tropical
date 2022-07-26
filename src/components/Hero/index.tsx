@@ -1,5 +1,6 @@
 import React from "react";
 import SwiperCore, { Autoplay } from "swiper";
+import { Link } from "react-scroll";
 
 import { HeroImage } from "../../assets";
 SwiperCore.use([Autoplay]);
@@ -37,9 +38,17 @@ const Hero = () => {
               >
                 KONSULTASI GRATIS
               </button>
-              <button className="rounded-lg px-6 py-4 bg-[#EBC386] uppercase text-[12px] md:text-[16px] font-bold text-black">
+
+              <Link
+                to={"#produk"}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={300}
+                className="cursor-pointer rounded-lg px-6 py-4 bg-[#EBC386] uppercase text-[12px] md:text-[16px] font-bold text-black"
+              >
                 CEK KATALOG
-              </button>
+              </Link>
             </div>
           </div>
           <div className="flex flex-row md:flex-start md:items-center gap-[32px]">

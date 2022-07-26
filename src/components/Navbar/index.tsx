@@ -39,7 +39,6 @@ const Navbar = () => {
     const tempMenus = [...menus];
 
     tempMenus.forEach((menu) => {
-      console.log(menu.link === link)
       if (menu.link === link) {
         menu.active = true;
       } else {
